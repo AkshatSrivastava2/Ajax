@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+        $("div").text("I Love U","slow");
+    });
+    $("button").click(function(){
+        $("div").css("color","red");
+        $("div").css("background-color","yellow");
+    });
+    
+    $("button").click(function(){
+        $("div").animate({
+            left: '40%',
+            opacity: '0.8',
+            height: '15%',
+            width: '25%',
+            fontSize:'3em'
+
+        });
+    });
+});
+</script>
+</head>
+<body>
+
+<button>Start Animation</button><br><br> 
+<div style="background:black;height:20%;width:20%;position:absolute;font-size:150%;color: white;">Tanya</div>
+
+</body>
+</html>
+
